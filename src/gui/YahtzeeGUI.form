@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="panGame" alignment="0" max="32767" attributes="0"/>
+                      <Component id="panDice" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="panHighScores" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="panScorecard" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="panScorecard" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="panDice" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="panGame" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="panHighScores" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="panDice">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Dice"/>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="Dice" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="labDice5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btDiceKeep5" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="labDice1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btDiceKeep1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="labDice4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btDiceKeep4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="labDice2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btDiceKeep2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="labDice3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btDiceKeep3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="btDiceKeep1" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="labDice1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="labDiceIcon1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="btDiceKeep2" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="labDice2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labDiceIcon2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btDiceKeep3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labDice3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labDiceIcon3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btDiceKeep4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labDice4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="btDiceKeep5" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="labDice5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labDiceIcon5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="java.awt.Checkbox" name="btDiceKeep1">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Keep"/>
+          </Properties>
+        </Component>
+        <Component class="java.awt.Checkbox" name="btDiceKeep2">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Keep"/>
+          </Properties>
+        </Component>
+        <Component class="java.awt.Checkbox" name="btDiceKeep3">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Keep"/>
+          </Properties>
+        </Component>
+        <Component class="java.awt.Checkbox" name="btDiceKeep4">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Keep"/>
+          </Properties>
+        </Component>
+        <Component class="java.awt.Checkbox" name="btDiceKeep5">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Keep"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDice1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dice 1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDice2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dice 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDice3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dice 3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDice4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dice 4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDice5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dice 5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDiceIcon1">
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDiceIcon2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDiceIcon3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDiceIcon4">
+        </Component>
+        <Component class="javax.swing.JLabel" name="labDiceIcon5">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panScorecard">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Scorecard"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="labBonusScore" pref="60" max="32767" attributes="0"/>
+                              <Component id="labUpperScore" alignment="0" max="32767" attributes="0"/>
+                              <Component id="labLowerScore" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          <Component id="labTotalScore" max="32767" attributes="0"/>
+                      </Group>
+                      <Component id="jPanel1" max="32767" attributes="0"/>
+                      <Component id="jPanel4" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labLowerScore" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="labUpperScore" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labBonusScore" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="labTotalScore" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Upper"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labAces" min="-2" max="-2" attributes="0"/>
+                          <Component id="labTwos" min="-2" max="-2" attributes="0"/>
+                          <Component id="labThrees" min="-2" max="-2" attributes="0"/>
+                          <Component id="labFours" min="-2" max="-2" attributes="0"/>
+                          <Component id="labFives" min="-2" max="-2" attributes="0"/>
+                          <Component id="labSixes" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btScoreAces" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btScoreTwos" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btScoreThrees" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btScoreFours" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btScoreFives" max="32767" attributes="0"/>
+                          <Component id="btScoreSixes" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labAces" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreAces" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labTwos" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreTwos" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labThrees" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreThrees" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labFours" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreFours" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labFives" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreFives" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labSixes" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreSixes" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="java.awt.Label" name="labAces">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Aces"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labFours">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Fours"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labTwos">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Twos"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labThrees">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Threes"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labFives">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Fives"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labSixes">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Sixes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreAces">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton6"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreAcesActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreTwos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton5"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreTwosActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreThrees">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton4"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreThreesActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreFours">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton3"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreFoursActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreFives">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton2"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreFivesActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreSixes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton1"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreSixesActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Lower"/>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labChance" min="-2" max="-2" attributes="0"/>
+                          <Component id="labFourKind" min="-2" max="-2" attributes="0"/>
+                          <Component id="labThreeKind" min="-2" max="-2" attributes="0"/>
+                          <Component id="labFullHouse" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="labSmallStraight" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="labLargeStraight" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="labYahtzee" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btScoreChance" max="32767" attributes="0"/>
+                          <Component id="btScoreYahtzee" max="32767" attributes="0"/>
+                          <Component id="btScoreFourKind" alignment="0" pref="83" max="32767" attributes="0"/>
+                          <Component id="btScoreFullHouse" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="btScoreSmallStraight" alignment="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="btScoreLargeStraight" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btScoreThreeKind" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="btScoreThreeKind" min="-2" max="-2" attributes="0"/>
+                          <Component id="labThreeKind" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labFourKind" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreFourKind" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labFullHouse" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreFullHouse" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labSmallStraight" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreSmallStraight" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labLargeStraight" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreLargeStraight" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labYahtzee" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreYahtzee" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="labChance" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="btScoreChance" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="java.awt.Label" name="labThreeKind">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Three of a kind"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labFourKind">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Four of a kind"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labFullHouse">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Full house"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labSmallStraight">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Small straight"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labLargeStraight">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Large straight"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labYahtzee">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Yahtzee"/>
+              </Properties>
+            </Component>
+            <Component class="java.awt.Label" name="labChance">
+              <Properties>
+                <Property name="alignment" type="int" value="2"/>
+                <Property name="text" type="java.lang.String" value="Chance"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreThreeKind">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton13"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreThreeKindActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreFourKind">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton12"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreFourKindActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreSmallStraight">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton10"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreSmallStraightActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreLargeStraight">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton9"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreLargeStraightActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreYahtzee">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton8"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreYahtzeeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreChance">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton7"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreChanceActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btScoreFullHouse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jButton11"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btScoreFullHouseActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="labLowerScore">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Lower"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labUpperScore">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Upper"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labBonusScore">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bonus"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labTotalScore">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Score"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panGame">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Game"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labTurn" min="-2" pref="44" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btRestart" pref="134" max="32767" attributes="0"/>
+                      <Component id="btReroll" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="labTurn" min="-2" max="-2" attributes="0"/>
+                      <Component id="btReroll" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btRestart" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="15" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="java.awt.Label" name="labTurn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Turn"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btReroll">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reroll"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRerollActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btRestart">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Restart"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRestartActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="panHighScores">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="High Scores"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="labHighscore1" alignment="0" pref="176" max="32767" attributes="0"/>
+                      <Component id="labHighscore2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="labHighscore3" alignment="0" max="32767" attributes="0"/>
+                      <Component id="labHighscore4" alignment="0" max="32767" attributes="0"/>
+                      <Component id="labHighscore5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="labHighscore6" alignment="0" max="32767" attributes="0"/>
+                      <Component id="labHighscore7" alignment="0" max="32767" attributes="0"/>
+                      <Component id="labHighscore8" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="22" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labHighscore1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="labHighscore8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="labHighscore1">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore2">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore3">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore4">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore5">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 5"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore6">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 6"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore7">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 7"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labHighscore8">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="Highscore 8"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
